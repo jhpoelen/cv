@@ -1,10 +1,10 @@
-all: cmungall_cv.pdf
+all: jhpoelen_cv.pdf
 
 %.pdf: %.tex MyPubs.bib
 	latex $* && latex $* && bibtex $* && latex $* && pdflatex $*
 
 clean:
-	rm *.{aux,bbl,log,out,blg,dvi}
+	rm *.aux *.bbl *.log *.out *.blg *.dvi
 
 %.yaml: %.bib
 	./bib2yaml.pl $< > $@

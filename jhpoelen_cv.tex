@@ -1,0 +1,258 @@
+
+%% http://theprofessorisin.com/2012/01/12/dr-karens-rules-of-the-academic-cv/
+
+\documentclass[11pt,fullpage]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+%\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{natbib}
+\usepackage{bibentry}
+
+\nobibliography*
+%\bibliographystyle{apa}
+
+% Palatino font
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+\def\name{Jorrit H. Poelen}
+
+\reversemarginpar
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+%\usepackage{sectsty}
+%\sectionfont{\rmfamily\mdseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+\bibliographystyle{apalike}
+
+% Print name centered and bold:
+\centerline{\Large \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.60\linewidth}
+  \href{http://www.linkedin.com/in/jhpoelen/}{Independent Biodiversity Informatics/ Software Engineer} \\
+  400 Perkins St. Apt 104 \\
+  Oakland, CA 94610
+\end{minipage}
+\begin{minipage}{0.40\linewidth}
+  \begin{tabular}{ll}
+    Cell: & (415) 217-9805 \\
+    Email: & \href{mailto:jhpoelen@xs4all.nl}{jhpoelen@xs4all.nl} \\
+    GitHub: & \href{http://github.com/jhpoelen}{github.com/jhpoelen} \\
+    ORCID: & \href{http://orcid.org/0000-0003-3138-4118}{0000-0003-3138-4118} \\
+%    Homepage: & \href{http:///}{www...} \\
+  \end{tabular}
+\end{minipage}
+
+\hrulefill
+
+\section*{Education}
+
+\begin{tabular}{ll}
+	2000 & {\bf MSc.} Experimental Physics, University of Groningen, the Netherlands \\
+\end{tabular}
+
+\section*{Employment}
+
+% Give institution, department, title, and dates (year only) of
+% employment.  Be sure and reflect joint appointments if you have one
+
+\begin{tabular}{ll}
+	2008-Present & {\bf Freelance Software Engineer} Berkeley/Oakland, CA \\
+	2012-2013 & {\bf Assistant Director} Translational Informatics Program, UCSF \\ 
+        2011-2012 & {\bf Software Engineer} Pandora Media Inc., Oakland, CA \\ 
+        2010-2011 & {\bf Software Engineer} Xoom Inc., San Francisco, CA \\
+	2006-2008 & {\bf Software Engineer/ Team Lead} GE Healthcare, Barrington, IL \\
+	2002-2006 & {\bf Software Engineer} GE Healthcare Zeist, the Netherlands \\
+	2001-2002 & {\bf Software Engineer} Tekadence Inc., San Francisco, CA \\ 
+	1999-2001 & {\bf Research Associate} School of Optometry, UC Berkeley \\
+\end{tabular}
+
+%\include{projects}
+\newcommand{\pinfo}[4]{
+  {\bf #1} & \multicolumn{2}{l}{\emph{#2}} \\
+  & \underline{\href{http://#3}{#3}} & #4 \\
+}
+
+
+\section*{Publications}
+
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    Google Scholar: & \href{https://goo.gl/dwyv7P}{goo.gl/dwyv7P} \\
+  \end{tabular}  
+\end{minipage}
+
+\subsection*{Refereed Journal Articles}
+
+\setlength{\extrarowheight}{10pt}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+
+ 2017 & \bibentry{Pauli2017} \\
+ 2014 & \bibentry{Poelen2014} \\
+ 2013 & \bibentry{Simons2013} \\
+
+\end{longtable}
+
+%\subsection*{Book Chapters}
+
+%\begin{longtable}{p{0.5in}|p{5.5in}}
+% Use: ./util/parsebib.pl incollection MyPubs.bib  | sort -r
+
+%  2007 & \bibentry{Haendel2007} \\
+
+%\end{longtable}
+
+%\subsection*{Letters to the Editor}
+%
+%\begin{longtable}{p{0.5in}|p{5.5in}}
+%
+%  2013 & \bibentry{Druzinsky2013} 
+%
+%\end{longtable}
+
+%\subsection*{Reports}
+
+%\begin{longtable}{p{0.5in}|p{5.5in}}
+
+ % http://www.aibs.org/public-policy/complex_data.html
+
+%\end{longtable}
+
+\subsection*{Conference Proceedings}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+ 2018 & \bibentry{Poelen2018} \\
+ 2017 & \bibentry{Collins2017} \\
+ & \bibentry{Poelen2017} \\
+ & \bibentry{Simons2017} \\
+
+ 2016 & \bibentry{Poelen2016} \\
+ & \bibentry{Hammock2016} \\
+ 2015 & \bibentry{Collins2015} \\
+ 2014 & \bibentry{Simons2014} \\
+
+\end{longtable}
+
+\subsection*{Pre-prints}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+  2018
+  & \bibentry{Thessen2018} \\
+
+\end{longtable}
+
+%\subsection*{Manuscripts in submission}
+
+%\begin{longtable}{p{0.5in}|p{5.5in}}
+
+%%      & Semantic Unification of rare disease. Submitted to X. Role: middle author \\
+%%      & Enhancers lead waves of coordinated transcription in transitioning mammalian cells. Role: middle author
+%      & Towards a computationally actionable phenotype data exchange (PDX). JAMIA. Role: middle author \\
+% & CL Update JBMS \\
+% GOATools
+
+%\end{longtable}
+
+\section*{Patents/ Awards/ Honors}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+ 2013 & Encyclopedia of Life Rubenstein Fellowship award. \\
+ 2006 & \bibentry{Poelen2006} \\
+
+\end{longtable}
+
+%\setlength{\extrarowheight}{5pt}
+
+%\section*{Awarded Proposals}
+
+%\begin{longtable}{p{0.5in}|p{5.5in}}
+
+%2016-2018 & NIH/NCATS OT3. co-PD. TransMed: A translational data integration machine for biomedical discovery.\\
+
+%\end{longtable}
+
+
+\section*{Invited Talks / Workshops / Meetings}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+% Give title, institutional location, and date. Year only (not month
+% or day) at left.  Month and day of talk go into entries.
+ 
+
+ 2018 
+ & GLOBIS-B Workshop on Essential Biodiversity Variables and Species Interactions, Bari, Italy, February 2018 \\ 
+
+ 2016 &  Practical Hacking On Identifiers at BiOSphere2 (PHOIBOS2), Biosphere2, Oracle, Arizona, February 2016 \\
+ 
+ 2015 &  Unleashing Species Interaction Data, Berkeley Institute for Data Sciencs, UC Berkeley, February 2015 \\
+
+ 2014 & NESCent-EOL-BHL Research Sprint, NESCent, Durham, NC, February 2014 \\ 
+  & Open Tree of Life Hack-a-thon, University of Michigan, Ann Arbor, MI, September 2014 \\ 
+
+\end{longtable}
+
+
+%\section*{Conference Activity}
+% see below
+
+% These entries will include: Name of paper, name of conference,
+% date. Year (Year only) on left as noted above. Month and date-range
+% of conference in the entry itself (ie, March 22-25).
+
+%\section*{Teaching Experience}
+
+%\begin{longtable}{p{0.5in}|p{5.5in}}
+%  2015 &  \textbf{Tutorial Organizer}. Introduction to ontologies, international plant trait curation workshop, Corvalis, OR, 2015  \\
+%\end{longtable}
+
+% Footer
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today
+  \end{footnotesize}
+\end{center}
+
+\nobibliography{MyPubs}
+\end{document}
